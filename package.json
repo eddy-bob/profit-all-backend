@@ -1,6 +1,7 @@
 {
   "name": "profit-all-backend",
   "version": "1.0.0",
+  "author": "Madu Eddy",
   "description": "Backend for Profit All Assessment",
   "main": "dist/index.js",
   "scripts": {
