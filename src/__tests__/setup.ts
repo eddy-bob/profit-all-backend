@@ -1,7 +1,6 @@
-import { MongoMemoryServer } from 'mongodb-memory-server';
-import mongoose from 'mongoose';
-import { app } from '../app';
-import { server } from '../server';
+import { MongoMemoryServer } from "mongodb-memory-server";
+import mongoose from "mongoose";
+import { server } from "../index";
 
 let mongoServer: MongoMemoryServer;
 
@@ -15,4 +14,4 @@ afterAll(async () => {
   await mongoose.disconnect();
   await mongoServer.stop();
   server.close();
-}); 
+});
